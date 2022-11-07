@@ -1,0 +1,374 @@
+
+/* estetica navegador fondo */
+
+header {
+    width: 100%;
+    border: solid #00A7E1;
+    position: absolute;
+    top: 0;
+    background-color: ghostwhite;
+    z-index: 1;
+    font-family: "Roboto";
+}
+
+header > nav  {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+/* codigo botonera */
+
+header > nav > p ~ a{
+    line-height: 50px;
+    color: #00A7E1;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+header > nav > p ~ a:hover {
+    color: #50b3d4;
+    text-decoration: none;
+    font-size: 1.54rem;
+    
+}
+
+/* codigo logo */
+
+header > nav > p{
+    line-height: 50px;
+    color: #00A7E1;
+    text-decoration: none;
+    font-size: 1.8rem;
+    user-select: none;
+}
+
+header > nav > p:first-child::after{
+    content: url(../Imágenes/logo.webp);
+    line-height: 80PX;
+}
+
+/* (chau menú hamburguesa) */
+
+#menu, [for=menu] {
+    display: none;
+}
+
+
+
+
+/* letras sobre fotorama */
+
+.container  h6{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 100px;
+    background-color: #00a9e17b;
+    padding: 10px;
+    user-select: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container  h1{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 100px;
+    background-color: #00a9e17b;
+    padding: 10px;
+    user-select: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pqviajar  h3{
+    font-size: 2.5rem;
+    color: white;
+    background-color: #00a9e17b;
+    padding: 30px;
+    text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.pqviajar p{
+    max-width: 1920px;
+    font-size: 1.5rem;
+    color: black;
+    padding-top: 10px;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.ejlugaresg {
+    row-gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+    align-self: stretch;
+} 
+.ejlugaresg img{
+    border-radius: 20px;
+    border: 5px ridge black;
+}
+
+.ejlugares {
+display: none;
+} 
+.ejlugares img{
+display: none;
+}
+
+
+/* Contacto */
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.flex .flex {
+    flex-flow: column wrap;
+}
+
+div ~ .flex:not(.flex  .flex){
+    width: 100%;
+    border: solid #00A7E1;
+    background-color: ghostwhite;
+    padding: 5vh;
+}
+
+.IMGres > img{
+    max-width: 100%;
+    height:auto;
+}
+
+main div:nth-child(2):not(div>div){
+    background-color: #00a9e17b;
+}
+
+.IMGres{
+    margin:10px;
+    width: 3rem;
+}
+
+div > div ~ p{
+    font-size: 1rem;
+}
+
+
+
+.interaccion{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px 12px;
+}
+.elementos{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5vw;
+}
+
+.Pinguinera-Chubut{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Pinguinera-Chubut img{
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.Meseta-de-Somuncura{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Meseta-de-Somuncura img{
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+
+.Aconcagua {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Aconcagua img{
+    width: 100%;
+}
+
+
+.capa p{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding-top: 125px;
+    left: 50%;
+    opacity: 0;
+    transition: 0,5s;
+}
+
+.capa:hover p{
+    bottom: 49%;
+    opacity: 1;
+}
+.Actividades{
+    text-align: center;
+    width: 100%;
+    font-family: "OS Light";
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    box-shadow: inset;
+    font-size: 30px;
+}
+.fotorama__wrap:not(.container .fotorama__wrap) {
+    margin: 0 auto;
+    border: #50b3d4 solid 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+.Actividades h1{
+    font-family: "OS Light";
+    text-align: center;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+}
+
+
+.capa{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0,5s;
+    opacity: 0;
+}
+
+.capa:hover{
+    background: black;
+    opacity: 45%;
+}
+
+
+.capa h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0,5s;
+}
+
+.capa:hover h3{
+    bottom: 49%;
+    opacity: 100%;
+}
+
+#tur{
+    font-size: 5vw;
+    color: white;
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #00a9e17b;
+    text-align: center;
+}
+
+.imgbackground{
+    background-image: url(../Imágenes/fotorama\ 5.webp);
+    background-size: cover;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: rgb(20, 20, 20);
+}
+
+footer > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 10px
+
+}
+
+.iframeresponsive1_1 {
+    position:relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden; 
+    border: gray solid 5px;
+}
+
+.iframeresponsive1_1 > iframe, .iframeresponsive1_1 > iframe {
+    position: absolute;
+    inset:0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorMaps {
+    width: 30vh;
+}
+
+footer p{
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+footer > div > div:not(div ~ div){
+    padding-top: 7vh;
+}
+
+/* codigo logo */
+
+Footer div > a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+Footer  div > a:first-child::after{
+    content: url(../Imágenes/logo.webp);
+    line-height: 80PX;
+}

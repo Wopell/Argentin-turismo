@@ -1,0 +1,10 @@
+@import url(Fuentes.css);
+@import url(Estilosg.css);
+@import url(elementos.css);
+@import url(Estilosc.css) only screen and (max-width: 1000px);
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

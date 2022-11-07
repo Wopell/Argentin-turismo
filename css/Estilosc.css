@@ -1,0 +1,155 @@
+    /* Codigo que esconde la botonera */
+    
+    nav > a:not(:first-child) {
+        display: none;
+    }
+
+    /* Menú */
+    
+    [for=menu] {
+        display: initial;
+        position: absolute;
+        right: 1rem;
+        line-height: 115px;
+        cursor: pointer;
+    }
+    
+    nav > a {
+        flex: 100%;
+    }
+    
+    /* Codigo botonera abierta */
+
+    #menu:checked ~ nav a {
+        display: initial;
+    }
+    header > nav {
+        flex-flow: column;
+        justify-content: center;
+}
+
+/* Chau letras sobre fotorama */
+
+.container  h6{
+display: none;
+}
+
+.container  h1{
+display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+
+.flex {
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.flex  .flex {
+    width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;}
+    
+.IMGres{
+    margin:10px;
+    width: 3rem;
+}
+
+div > div ~ p{
+    display: 2rem;
+}
+
+.ejlugaresg {
+    display: none;
+    } 
+    .ejlugaresg img{
+    display: none;
+    }
+
+.ejlugares{
+    gap: 25px;
+}
+
+.ejlugares {
+    display: block;
+    row-gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+    align-self: stretch;
+} 
+.ejlugares img{
+    display: block;
+    border-radius: 20px;
+    border: 5px ridge black;
+}
+
+
+
+.capa:hover p{
+display: none;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(20, 20, 20);
+}
+
+footer > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px
+
+}
+
+.iframeresponsive1_1 {
+    position:relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden; 
+    border: gray solid 5px;
+}
+
+.iframeresponsive1_1 > iframe, .iframeresponsive1_1 > iframe {
+    position: absolute;
+    inset:0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorMaps {
+    width: 30vh;
+}
+
+footer p{
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+/* codigo logo */
+
+Footer div > a{
+    line-height: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 4vw;
+}
+
+Footer  div > a:first-child::after{
+    content: url(../Imágenes/logo.webp);
+    line-height: 80PX;
+}
